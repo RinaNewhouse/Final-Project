@@ -295,7 +295,7 @@ header .row {
 .header__email--btn {
     z-index: 2;
     margin: 8px;
-    height: calc(100%-16px);
+    height: 78%;
     border-radius: 500px;
     width: 160px;
     border: none;
@@ -327,6 +327,11 @@ header .row {
 .header__img--wrapper {
     padding-left: 24px;
     width: calc(100% - 41.6667%);
+}
+
+.header__img {
+    width: 100%;
+    max-width: 768px;
 }
 
 .header__blob {
