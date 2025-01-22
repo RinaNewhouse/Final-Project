@@ -88,8 +88,8 @@ body {
 
 .row {
     width: 100%;
-    margin: 0 auto;
     max-width: 1280px;
+    margin: 0 auto;
 }
 
 .nav__container {
@@ -259,9 +259,6 @@ header .row {
 }
 
 .header__description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 41.6667%;
 }
 
@@ -953,11 +950,13 @@ header .row {
     font-weight: 700;
     line-height: 1.5;
     z-index: 2;
+    width: 50%;
 }
 
 .start__buttons {
     display: flex;
     justify-content: flex-end;
+    width: 50%;
 }
 
 .start__button {
@@ -1108,6 +1107,11 @@ header .row {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms;
+}
+
+.footer__social--link svg {
+    height: 16px;
+    width: 16px;
 }
 
 /* General Website */
