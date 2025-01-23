@@ -1139,6 +1139,24 @@ header .row {
         display: flex;
         justify-content: flex-end;
     }
+    h1 {
+        font-size: 36px;
+    }
+    .header__description--para {
+        font-size: 16px;
+    }
+    .header__customers {
+        padding-right: 64px;
+    }
+    .plan__bottom {
+        padding: 32px 64px;
+    }
+    .testimonials__img {
+        width: 41.6667%;
+    }
+    .testimonials__description {
+        width: calc(100% - 41.6667%);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1147,6 +1165,97 @@ header .row {
     }
     .btn__menu {
         display: block;
+    }
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__description, .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .header__description--para {
+        margin: 20px 0;
+    }
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 48px;
+    }
+    .header__customers {
+        padding-right: 0px;
+    }
+    #features .section__title, #pricing .section__title {
+        font-size: 48px;
+    }
+    .section__title {
+        font-size: 36px;
+    }
+    .section__para {
+        font-size: 16px;
+    }
+    .features {
+        max-width: 768px;
+    }
+    .feature {
+        width: calc(50%);
+    }
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
+    }
+    .feature__title {
+        line-height: 1;
+    }
+    .feature__para {
+        max-width: none;
+    }
+    .quality__description {
+        margin-right: 0px;
+        padding-right: 48px;
+    }
+    .values__list {
+        flex-direction: column;
+        max-width: 320px;
+    }
+    #features .section__title, #pricing .section__title {
+        font-size: 48px;
+    }
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan {
+        margin-right: 0px;
+    }
+    .testimonials__description {
+        padding-left: 48px;
+    }
+    .start__row {
+        flex-direction: column;
+    }
+    .start__title {
+        text-align: center;
+        width: 100%;
+        max-width: 512px;
+    }
+    .start__buttons {
+        width: auto;
+        margin-top: 24px;
+    }
+    .start__button {
+        padding: 16px 32px;
+    }
+    footer {
+        padding: 80px 32px;
     }
 }
 
@@ -1175,22 +1284,26 @@ header .row {
       width: 50%;
     }
   }
-  
-  /* Small Phones, Large Smartphones */
-  @media (max-width: 550px) {
-    .nav__links {
-      display: none;
+
+  @media (max-width: 640px) {
+    .header__email {
+        flex-direction: column;
+        height: auto;
     }
-  
-    .btn__menu {
-      display: block;
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
     }
-  
-    .highlight {
-      width: 100%;
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
     }
-  
-    .highlight:not(:last-child) {
-      margin-bottom: 24px;
+    .footer__logo--text, .footer__copyright {
+        font-size: 16px;
     }
-  }
+}
